@@ -9,3 +9,10 @@ function creatPixels(rows, columns){
 };
 creatPixels(16,16);
 
+const draw = document.querySelectorAll('.pixels');
+
+for (let i = 0; i < draw.length; i++) {
+    draw[i].addEventListener('mouseover', () => {
+        draw[i].classList.toggle('black');
+    })
+}
