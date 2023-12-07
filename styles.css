@@ -1,3 +1,22 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0b388c;
+    color: #d2d5d9;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#frame{
+    border: 1px ;
+    box-shadow: 0px 0px 10px 5px #7b7f87;
+    max-width: 960px;
+    margin : 2em;
+
+}
+
 #grid {
     display: flex;
     flex-wrap: wrap;
@@ -6,11 +25,18 @@
 
 .pixels{
    padding: 1em;
-   border: 1px solid  #000000;
+   border: 1px;
    text-align: center;
 
 }
 
 .pixels.black{
     background-color: #000000;
+}
+
+button{
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid;
+    font-weight: bold;
 }
