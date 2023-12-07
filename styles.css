@@ -15,7 +15,8 @@ body{
     flex-wrap: wrap;
     border: 1px ;
     box-shadow: 0px 0px 10px 5px #7b7f87;
-    width: 36em;
+    width: 960px;
+    height: 960px;
     margin : 2em;
 
 }
