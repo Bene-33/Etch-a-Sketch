@@ -1,0 +1,12 @@
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 38em;
+}
+
+.pixels{
+   padding: 1em;
+   border: solid  #000000;
+   text-align: center;
+
+}
