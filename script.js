@@ -1,7 +1,7 @@
 const grid = document.querySelector('#grid');
 const brush = document.querySelector('#brush');
 const button = document.querySelector('#brush');
-let columns = 64;
+let columns = 16;
 let rows = columns;
 
 //creat grid rows x columns
@@ -24,6 +24,9 @@ for (let i = 0; i < draw.length; i++) {
 };
 
 button.addEventListener('click', () => {
-    return columns = prompt('enter new grid size'),
+    
+    columns = prompt('enter new grid size');
+    if (columns >= 100){columns = 100};
     creatPixels(rows, columns)
 });
+
