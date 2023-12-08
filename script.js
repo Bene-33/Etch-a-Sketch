@@ -1,4 +1,7 @@
 const grid = document.querySelector('#grid');
+const brush = document.querySelector('#brush')
+let columns = 16;
+let rows = columns;
 
 //creat grid rows x columns
 function creatPixels(rows, columns){
@@ -8,7 +11,7 @@ function creatPixels(rows, columns){
         grid.appendChild(pixels);
     };
 };
-creatPixels(16,16);
+creatPixels(rows,columns);
 
 const draw = document.querySelectorAll('.pixels');
 
