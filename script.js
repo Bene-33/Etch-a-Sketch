@@ -1,7 +1,7 @@
 const grid = document.querySelector('#grid');
 const brush = document.querySelector('#brush');
 const button = document.querySelector('#brush');
-let columns = 16;
+let columns = 64;
 let rows = columns;
 
 //creat grid rows x columns
