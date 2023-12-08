@@ -23,8 +23,8 @@ for (let i = 0; i < draw.length; i++) {
     })
 };
 
+//set up grid/brush size 
 button.addEventListener('click', () => {
-    
     columns = prompt('enter new grid size');
     if (columns >= 100){columns = 100};
     creatPixels(rows, columns)
