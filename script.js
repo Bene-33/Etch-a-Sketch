@@ -1,5 +1,6 @@
 const grid = document.querySelector('#grid');
-const brush = document.querySelector('#brush')
+const brush = document.querySelector('#brush');
+const button = document.querySelector('#brush');
 let columns = 16;
 let rows = columns;
 
@@ -20,4 +21,9 @@ for (let i = 0; i < draw.length; i++) {
     draw[i].addEventListener('mouseover', () => {
         draw[i].classList.toggle('black');
     })
-}
+};
+
+button.addEventListener('click', () => {
+    return columns = prompt('enter new grid size'),
+    creatPixels(rows, columns)
+});
