@@ -3,6 +3,7 @@ const brush = document.querySelector('#brush');
 const button = document.querySelector('#brush');
 let columns = 16;
 let rows = columns;
+let color = 'black';
 
 //creat grid rows x columns
 function creatPixels(rows, columns){
@@ -19,7 +20,7 @@ const draw = document.querySelectorAll('.pixels');
 // paint with the mouse 
 for (let i = 0; i < draw.length; i++) {
     draw[i].addEventListener('mouseover', () => {
-        draw[i].classList.toggle('black');
+        draw[i].classList.toggle(color);
     })
 };
 
