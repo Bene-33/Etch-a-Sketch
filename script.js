@@ -7,7 +7,7 @@ let color = ['black'];
 
 //creat grid rows x columns
 function creatPixels(rows, columns){
-    for(let i = 0; i < (rows * columns); i++){
+    for(let i = 0; i <= (rows * columns); i++){
         let pixels = document.createElement('div');
         pixels.classList.add('pixels');
         grid.appendChild(pixels);
