@@ -1,7 +1,7 @@
 const grid = document.querySelector('#grid');
 const brush = document.querySelector('#brush');
 const button = document.querySelector('#brush');
-let rows = 32;
+let rows = 16;
 let columns = rows;
 let color = ['black'];
 
@@ -18,19 +18,30 @@ function creatPixels(rows){
         grid.appendChild(row);
     };
 };
-
 creatPixels(rows);
-
-// paint/draw with the mouse 
-const draw = document.querySelectorAll('.pixels');
-for (let i = 0; i < draw.length; i++) {
-    draw[i].addEventListener('mouseover', () => {
-        draw[i].classList.add(color[0]);
-    })
-};
 
 //set up grid/brush size 
 button.addEventListener('click', () => {
-    columns = prompt('enter new grid size');
+    let pixels = document.querySelectorAll('.pixels');
+    for(let i = 0; i < pixels.length; i++){
+        pixels[i].remove();
+    };
+
+    rows = prompt('enter new grid size (max: 100)');
     if (columns >= 100){columns = 100};
+    console.log(pixels)
+
+    creatPixels(rows);
+    draw();
 });
+
+// paint/draw with the mouse 
+function draw(){
+const draw = document.querySelectorAll('.pixels');
+    for (let i = 0; i < draw.length; i++) {
+        draw[i].addEventListener('mouseover', () => {
+            draw[i].classList.add(color[0]);
+        })
+    };
+};
+draw();
