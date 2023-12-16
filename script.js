@@ -28,7 +28,7 @@ button.addEventListener('click', () => {
     };
 
     rows = prompt('enter new grid size (max: 100)');
-    if (columns >= 100){columns = 100};
+    if (rows >= 100){rows = 100};
     console.log(pixels)
 
     creatPixels(rows);
