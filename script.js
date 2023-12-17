@@ -31,11 +31,11 @@ button.addEventListener('click', () => {
     console.log(pixels)
 
     creatPixels(rows);
-    draw();
+    drawBlack();
 });
 
 // paint/draw with the mouse 
-function draw(){
+function drawBlack(){
 const draw = document.querySelectorAll('.pixels');
     for (let i = 0; i < draw.length; i++) {
         draw[i].addEventListener('mouseover', () => {
@@ -43,4 +43,4 @@ const draw = document.querySelectorAll('.pixels');
         })
     };
 };
-draw();
+drawBlack();
