@@ -39,7 +39,7 @@ function drawBlack(){
     const draw = document.querySelectorAll('.pixels');
     for (let i = 0; i < draw.length; i++) {
         draw[i].addEventListener('mouseover', () => {
-            draw[i].style['background-color'] = '#000000';
+            draw[i].style.backgroundColor = '#000000';
         });
     };
 };
@@ -49,7 +49,7 @@ function drawRainbow(){
     for (let i = 0; i < draw.length; i++) {
         let rainbowColor = Math.floor(Math.random()*16777215).toString(16);
         draw[i].addEventListener('mouseover', () => {
-            draw[i].style['background-color'] = '#' + rainbowColor;
+            draw[i].style.backgroundColor = '#' + rainbowColor;
         });
     };
 
@@ -60,7 +60,7 @@ function drawDarken(){
     for (let i = 0; i < draw.length; i++) {
         let rainbowColor = Math.floor(Math.random()*16777215).toString(16);
         draw[i].addEventListener('mouseover', () => {
-            draw[i].style['background-color'] = '#' + rainbowColor;
+            draw[i].style.backgroundColor = '#' + rainbowColor;
         });
     };
 
