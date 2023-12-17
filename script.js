@@ -36,11 +36,36 @@ button.addEventListener('click', () => {
 
 // paint/draw with the mouse 
 function drawBlack(){
-const draw = document.querySelectorAll('.pixels');
+    const draw = document.querySelectorAll('.pixels');
     for (let i = 0; i < draw.length; i++) {
         draw[i].addEventListener('mouseover', () => {
             draw[i].style['background-color'] = '#000000';
-        })
+        });
     };
 };
-drawBlack();
+
+function drawRainbow(){
+    const draw = document.querySelectorAll('.pixels');
+    for (let i = 0; i < draw.length; i++) {
+        let rainbowColor = Math.floor(Math.random()*16777215).toString(16);
+        draw[i].addEventListener('mouseover', () => {
+            draw[i].style['background-color'] = '#' + rainbowColor;
+        });
+    };
+
+};
+
+function drawDarken(){
+    const draw = document.querySelectorAll('.pixels');
+    for (let i = 0; i < draw.length; i++) {
+        let rainbowColor = Math.floor(Math.random()*16777215).toString(16);
+        draw[i].addEventListener('mouseover', () => {
+            draw[i].style['background-color'] = '#' + rainbowColor;
+        });
+    };
+
+};
+
+drawDarken();
+
+
