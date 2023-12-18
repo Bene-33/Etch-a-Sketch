@@ -1,6 +1,8 @@
 const grid = document.querySelector('#grid');
 const brush = document.querySelector('#brush');
 const button = document.querySelector('#brush');
+const buttonColorBlack = document.querySelector('#colorBlack');
+const buttonColorRainbow = document.querySelector('#colorRainbow');
 let rows = 16;
 let columns = rows;
 
@@ -43,6 +45,7 @@ function drawBlack(){
         });
     };
 };
+drawBlack();
 
 function drawRainbow(){
     const draw = document.querySelectorAll('.pixels');
@@ -55,6 +58,13 @@ function drawRainbow(){
 
 };
 
-drawBlack();
+buttonColorRainbow.addEventListener('click', () => 
+drawRainbow());
+buttonColorBlack.addEventListener('click', () =>
+    drawBlack());
+
+
+
+
 
 
