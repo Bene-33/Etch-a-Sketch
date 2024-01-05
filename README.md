@@ -2,4 +2,4 @@
 
 builded a simple sketch block with individual grid size.
 
-[preview](bene-33.github.io/Etch-a-Sketch)
+[preview](https://bene-33.github.io/Etch-a-Sketch/)
